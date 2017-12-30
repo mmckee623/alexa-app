@@ -1,13 +1,24 @@
 'use strict';
 
-const MongoClient = require('mongodb').MongoClient;
+const MongoClient = require('mongodb').MongoClient; 
 
-const MONGO_URL = 'mongodb://tourismAdmin:QuincyPromes7$@ds133077.mlab.com:33077/tourism-app';
+  
 
-MongoClient.connect(MONGO_URL, (err, db) => {  
-  if (err) {
-    return console.log(err);
+const MONGO_URL = 'mongodb://tourismAdmin:biscuits1@ds133077.mlab.com:33077/tourism-app'; 
+
+  
+console.log("Starting");
+
+
+ MongoClient.connect(MONGO_URL, (err, db) => {   
+
+  if (err) { 
+
+    return console.log(err); 
+
   }
+
+})
 
 
 var http = require('http');
@@ -245,3 +256,4 @@ function handleNextQuoteIntent(request,context,session) {
   }
 
 }
+console.log("Started");
