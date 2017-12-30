@@ -257,7 +257,6 @@ function handleNextQuoteIntent(request,context,session) {
   }
 
 }
-<<<<<<< HEAD
+
 console.log("Started");
-=======
->>>>>>> a264fa8d256a5e365ed97434117a6980695d34ee
+
